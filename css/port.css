@@ -1,0 +1,406 @@
+html,body{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+body{
+	background-color: #0F0F0f;
+	font-family: 'Cormorant Upright', serif;
+}
+
+
+
+
+.nav ul{
+	margin-top: 0;
+	list-style: none;
+	padding-left: 0;
+	text-align: right;
+	height: 50px;
+}
+
+.nav li{
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.nav{
+	background-color: #0F0F0F;
+	color: white;
+	height: 50px;
+
+	animation-name: mini-titulos;
+	animation-duration: 2s;
+}
+
+
+
+
+.nav a {
+	color: white;
+	text-decoration: none;
+
+}
+
+.nav a:hover {
+	color: #9D0CF7;
+}
+
+
+.nav li.linhatri{
+	display: none;
+}
+
+
+.nav li.linhatri:hover {
+	color: #9D0CF7;
+	cursor: pointer;
+}
+
+
+
+
+
+.capa{
+	color: white;
+}
+
+
+.capa span{
+	color: #9D0CF7;
+	display: block;
+}
+
+
+.capa div{
+	display: inline-block;
+	height: 650px;
+}
+
+
+
+
+
+.foto {
+	width: 40%;
+	text-align: center;
+
+	animation-name: anima-fotin;
+	animation-duration: 2s;
+}
+
+.foto img{
+	width: 340px;
+	border-radius: 340px;
+	margin-top: 100px;
+}
+
+
+
+
+
+.titulo{
+	vertical-align: top;
+	width: 59%;
+
+	animation-name: anima-titulo;
+	animation-duration: 2s;
+}
+
+
+.titulo h1{
+	font-size: 59px;
+	margin-top: 200px;
+	text-transform: uppercase;
+	font-weight: 500;
+	line-height: 50px;
+}
+
+
+.titulo h2{
+	font-size: 19px;
+	font-weight: 300;
+	margin-top: -25px;
+}
+
+
+
+
+
+.menu { 
+padding: 80px 180px 80px 108px;
+
+	animation-name: anima-menus;
+	animation-duration: 2s;
+
+}
+
+
+.menu h1{
+	color: white;
+	font-weight: normal;
+	font-size: 28px;
+	margin-bottom: 40px;
+}
+
+.menu h2{
+	color: #9D0CF7;
+	font-weight: normal;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.menu h3{
+	color: #9D0CF7;
+	font-size: 18px;
+	text-transform: uppercase;
+	margin-top: 36px;
+}
+
+.menu p{
+	color: white;
+	font-size: 20px;
+	line-height: 24px;
+
+}
+
+
+
+
+
+.caminho{
+	list-style: none;
+	padding-left: 0;
+	color: gray;
+}
+
+.caminho li{
+	display: inline-block;
+}
+
+.caminho a{
+	color: gray;
+}
+
+
+
+
+
+
+.social-img{
+	width: 50px;
+	margin-right: 25px;
+}
+
+
+
+
+.miniatura{
+	width: 320px;
+	height: 320px;
+	display: inline-block;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-size: contain;
+	overflow: hidden;
+}
+
+.miniatura a{
+	text-decoration: none;
+}
+
+
+
+
+
+
+.gradiente{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	padding-top: 120px;
+	transition: 0.6s;
+}
+
+.gradiente:hover {
+	opacity: 0.8;
+	transition: 0.6s;
+}
+
+
+
+
+
+.titlegrad{
+	text-align: center;
+}
+
+
+.titlegrad h1{
+	font-size: 18px;
+	color: #9D0CF7;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.titlegrad h2{
+	text-transform: none;
+	font-weight: 100;
+	color: white;
+	font-size: 20px;
+	margin-top: -30px
+	
+}
+
+
+
+
+
+.artess{
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+
+
+.linkvoltar{
+	color:#9D0CF7;
+}
+
+
+
+
+
+
+@keyframes anima-fotin{
+	0% {opacity: 0; transform: translate(0px,20px);}
+	100% {opacity: 1;transform: translate(0px,0px);}
+}
+
+
+@keyframes anima-titulo{
+	0% {opacity: 0; transform: translate(0px,-20px);}
+	100% {opacity: 1;transform: translate(0px,0px);}
+}
+
+
+@keyframes mini-titulos {
+	0% {opacity: 0}
+	50%{opacity: 0;}
+	100% {opacity: 1}
+}
+
+@keyframes anima-menus{
+	0% {opacity: 0; transform: translate(-20px,0px);}
+	100% {opacity: 1;transform: translate(0px,0px);}
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+	
+	.nav li{
+		display: none;
+	}
+
+
+	.capa div{
+	display: block;
+	height: auto;
+	}
+
+
+
+
+	.nav li.linhatri{
+		display: inline-block;
+	}
+
+
+
+	.foto{
+		width: 100%;
+	}
+
+	.foto img{
+		margin-top: 0;
+		max-width: 280px;
+	}
+
+
+
+	.titulo{
+		width: 100%;
+		text-align: center;
+	}
+
+	.titulo h1{
+		margin-top: 27px;
+		font-size: 40px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.titulo h2{
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 10px;
+	}
+
+
+
+	.miniatura{
+		max-width: 100%;
+		background-size: auto 100%;
+	}
+
+
+
+	.gradiente{
+		opacity: 0.8;
+	}
+
+
+
+	.nav li.linhatri{
+		text-align: center;
+		
+	}
+
+
+
+	.navjs{
+		height: auto;
+	}
+
+	.navjs ul{
+		height: auto;
+		text-align: center;
+		padding-right: 15%;
+		padding-left: 15%;
+	}
+
+	.navjs li{
+		display: block;
+		
+		width: 100%;
+		padding: 0;
+	}
+
+
+
+
+}
